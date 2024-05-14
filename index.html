@@ -3,42 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="description" content="four card feature component">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="./stylesheets/attribution.css">
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+  <main>
+    <h1 class="hidden">Four card feature section</h1>
+    <section class="four-card-feature-component">
+      <h2 class="section-title">
+        Reliable, efficient delivery
+        <span class="bold">Powered by Technology</span>
+      </h2>
+      <p class="section-description">
+        Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful
+      </p>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+      <ul class="feature-list" aria-label="Feature list">
+        <li>
+          <article class="feature-list-item">
+            <h3 class="feature-list-item-header">Supervisor</h3>
+            <p class="feature-list-item-description">Monitors activity to identify project roadblocks</p>    
+            
+            <img class="feature-list-item-icon" src="./images/icon-supervisor.svg" alt="" aria-hidden="true">
+          </article>
+        </li>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+        <li>
+          <article class="feature-list-item">
+            <h3 class="feature-list-item-header">Team Builder</h3>
+            <p class="feature-list-item-description">Scans our talent network to create the optimal team for your project</p>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+            <img class="feature-list-item-icon" src="./images/icon-team-builder.svg" alt="" aria-hidden="true">
+          </article>
+        </li>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+        <li>
+          <article class="feature-list-item">
+            <h3 class="feature-list-item-header">Karma</h3>
+            <p class="feature-list-item-description">Regularly evaluates our talent to ensure quality</p>
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+            <img class="feature-list-item-icon" src="./images/icon-karma.svg" alt="" aria-hidden="true">
+          </article>
+        </li>
 
-  
+        <li>
+          <article class="feature-list-item">
+            <h3 class="feature-list-item-header">Calculator</h3>
+            <p class="feature-list-item-description">Uses data from past projects to provide better delivery estimates</p>
+
+            <img class="feature-list-item-icon" src="./images/icon-calculator.svg" alt="" aria-hidden="true">
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/CardboardPL">CardboardPL</a>.
     </p>
   </footer>
 </body>
