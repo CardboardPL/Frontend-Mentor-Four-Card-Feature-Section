@@ -1,0 +1,12 @@
+.hidden {
+  position: absolute;
+  top: -100vh;
+}
+
+.light-bold {
+  font-weight: var(--light-bold);
+}
+
+.bold {
+  font-weight: var(--bold);
+}
