@@ -10,3 +10,19 @@
 .bold {
   font-weight: var(--bold);
 }
+
+.bg-cyan {
+  background-color: var(--cyan);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
