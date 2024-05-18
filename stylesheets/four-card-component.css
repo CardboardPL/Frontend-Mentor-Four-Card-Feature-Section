@@ -1,0 +1,153 @@
+.four-card-feature-component {
+  text-align: center;
+  min-height: 100vh;
+  width: clamp(300px, 82.6666667%, 100%);
+  padding: 82.5px 0 0 0;
+}
+
+.section-title {
+  font-size: 24px;
+  line-height: 1.55;
+  letter-spacing: 0.15px;
+  color: var(--very-dark-blue);
+  margin-bottom: 15px;
+}
+
+.section-title > .bold {
+  letter-spacing: 0.2px;
+}
+
+.section-description {
+  line-height: 1.68;
+  margin-bottom: 74px;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+  list-style-type: none;
+}
+
+.feature-item {
+  position: relative;
+  height: 222px;
+  padding: 30px 28px 28px 28px;
+  background-color: white;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 16px 16px hsla(180, 62%, 55%, 0.5);
+}
+
+.feature-list > li:nth-child(2) .feature-item {
+  margin-bottom: 23px;
+}
+
+.feature-list > li:nth-child(3) .feature-item {
+  margin-bottom: 24px;
+}
+
+.feature-item > * {
+  line-height: 1.2;
+}
+
+.feature-item-icon {
+  position: absolute;
+  height: 57px;
+  width: 57px;
+  right: 28px;
+  bottom: 28px;
+}
+
+.feature-item-header {
+  font-size: 20px;
+  color: var(--very-dark-blue);
+  margin-bottom: 7px;
+}
+
+.feature-item-description {
+  font-size: 13px;
+  line-height: 1.725;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+@media (min-width: 750px) {
+  .four-card-feature-component {
+    padding: 80px 0 0 0;
+  }
+
+  .section-title,
+  .section-description {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 36px;
+    letter-spacing: 0.1575px;
+    line-height: 1.425;
+    margin-bottom: 16px;
+  }
+
+  .section-description {
+    letter-spacing: 0.06px;
+    margin-bottom: 63px;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    align-items: center;
+    max-width: 1110px;
+    height: 530px;
+    margin: 0 auto;
+  }
+
+  .feature-list > li:first-child,
+  .feature-list > li:last-child {
+    padding-top: 24px;
+  }
+
+  .feature-item {
+    width: 350px;
+    height: 250px;
+    padding: 34px 32px 32px 32px;
+  }
+
+  .feature-list > li:nth-child(2) .feature-item,
+  .feature-list > li:nth-child(3) .feature-item {
+    margin: 0;
+  }
+
+  .feature-item-header {
+    margin-bottom: 12px;
+  }
+
+  .feature-item-description {
+    letter-spacing: 0.1px;
+  }
+
+  .feature-item-icon {
+    right: 32px;
+    bottom: 32px;
+  }
+
+  .feature-list > li:first-of-type,
+  .feature-list > li:last-of-type  {
+    grid-row: 1 / 3;
+  }
+
+  .feature-list > li:last-of-type {
+    grid-column-start: 3;
+  }
+}
